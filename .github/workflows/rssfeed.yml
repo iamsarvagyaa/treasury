@@ -1,0 +1,40 @@
+name: RssFeed
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  rssfeed:
+    name: Setup rssfeed workflow
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.3
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Update RSS Feeds
+        uses: gautamkrishnar/blog-post-workflow@master
+        with:
+          comment_tag_name: "RSS"
+          feed_list: "https://serverlessland.com/feed.xml,https://serverlessfirst.com/feed.xml"
+          feed_names: "🚀 ServerlessLand,🚀 ServerlessFirst"
+          template: "$newline - $feedName - [$title]($url) :: $description"
+          max_post_count: 50
+          readme_path: "./rssfeed.md"
+          disable_sort: false
+          gh_token: ${{ secrets.GH_KBASE }}
+          commit_message: "ci: updated rss feeds"
+          committer_username: "iamsarvagyaa"
+          committer_email: ${{ secrets.GH_EMAIL }}
+          enable_keepalive: true
+          retry_count: 6
+          retry_wait_time: 10
+          disable_item_validation: true
+          item_exec: |
+            if(!post.title) post = null;
+            if(!post.description) post = null;
+            if(!post.pubDate) post = null;
+        continue-on-error: true
