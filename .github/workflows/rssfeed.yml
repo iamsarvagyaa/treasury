@@ -36,5 +36,6 @@ jobs:
           retry_wait_time: 10
           disable_item_validation: true
           item_exec: |
-            if(!post.title || !post.description || !post.pubDate) post = null;
+            if(!post.pubDate) post = null;
+            if(!post.description) post = null;
         continue-on-error: true
