@@ -22,9 +22,11 @@ jobs:
           feed_list: "https://serverlessland.com/feed.xml,https://serverlessfirst.com/feed.xml"
           feed_names: "🚀 ServerlessLand,🚀 ServerlessFirst"
           template: "$newline - $feedName - [$title]($url) :: $description"
+          description_max_length: "100"
+          title_max_length: "75"
           max_post_count: 50
           readme_path: "./rssfeed.md"
-          disable_sort: false
+          disable_sort: true
           gh_token: ${{ secrets.GH_KBASE }}
           commit_message: "ci: updated rss feeds"
           committer_username: "iamsarvagyaa"
@@ -34,7 +36,5 @@ jobs:
           retry_wait_time: 10
           disable_item_validation: true
           item_exec: |
-            if(!post.title) post = null;
-            if(!post.description) post = null;
-            if(!post.pubDate) post = null;
+            if(!post.title || !post.description || !post.pubDate) post = null;
         continue-on-error: true
