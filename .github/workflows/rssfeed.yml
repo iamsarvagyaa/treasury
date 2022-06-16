@@ -25,7 +25,7 @@ jobs:
           comment_tag_name: "RSS"
           feed_list: "https://serverlessland.com/feed.xml,https://serverlessfirst.com/feed.xml"
           feed_names: "🚀 ServerlessLand,🚀 ServerlessFirst"
-          template: "$newline - $feedName : [$title ..]($url)
+          template: "$newline - $feedName : [$title ..]($url)"
           title_max_length: "75"
           max_post_count: 10000
           readme_path: "./rssfeed.md"
