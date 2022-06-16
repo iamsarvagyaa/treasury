@@ -26,7 +26,7 @@ jobs:
           title_max_length: "75"
           max_post_count: 50
           readme_path: "./rssfeed.md"
-          disable_sort: true
+          #disable_sort: true
           gh_token: ${{ secrets.GH_KBASE }}
           commit_message: "ci: updated rss feeds"
           committer_username: "iamsarvagyaa"
@@ -37,5 +37,4 @@ jobs:
           disable_item_validation: true
           item_exec: |
             if(!post.pubDate) post = null;
-            if(!post.description) post = null;
         continue-on-error: true
