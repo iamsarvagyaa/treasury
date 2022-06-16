@@ -2,7 +2,7 @@ name: DailyDev
 
 on:
   repository_dispatch:
-    types: [setup]
+    types: [dailydev]
   workflow_dispatch:
 
 jobs:

@@ -1,8 +1,12 @@
 name: RssFeed
 
 on:
-  schedule:
-    - cron: "0 0 * * *"
+  workflow_run:
+    workflows: ["DailyDev"]
+    types:
+      - completed
+  repository_dispatch:
+    types: [rssfeed]
   workflow_dispatch:
 
 jobs:
@@ -21,10 +25,9 @@ jobs:
           comment_tag_name: "RSS"
           feed_list: "https://serverlessland.com/feed.xml,https://serverlessfirst.com/feed.xml"
           feed_names: "🚀 ServerlessLand,🚀 ServerlessFirst"
-          template: "$newline - $feedName - [$title]($url) :: $description"
-          description_max_length: "100"
+          template: "$newline - $feedName : [$title ..]($url)
           title_max_length: "75"
-          max_post_count: 50
+          max_post_count: 10000
           readme_path: "./rssfeed.md"
           disable_sort: true
           gh_token: ${{ secrets.GH_KBASE }}
@@ -35,6 +38,14 @@ jobs:
           retry_count: 6
           retry_wait_time: 10
           disable_item_validation: true
-          item_exec: |
-            if(!post.pubDate) post = null;
+          # item_exec: |
+          #   if(!post.pubDate) post = null;
         continue-on-error: true
+
+  run_if_failure:
+    if: ${{ !github.event.client_payload.passed }}
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          MESSAGE: ${{ github.event.client_payload.message }}
+        run: echo $MESSAGE
