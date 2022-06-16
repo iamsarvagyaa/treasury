@@ -24,6 +24,7 @@
 
 ### [↑](#bookmarks) DailyDev
 <!-- DAILYDEV-BOOKMARKS:START -->
+- [ArgoCD Best Practices You Should Know](https://app.daily.dev/posts/2LuV9G3DE?utm_source=rss&utm_medium=bookmarks&utm_campaign=I9dDe5CQwr5psfm90zee4)
 - [Microservices Architecture | Ultimate Guide &amp; Tutorial](https://app.daily.dev/posts/XGQELR20f?utm_source=rss&utm_medium=bookmarks&utm_campaign=I9dDe5CQwr5psfm90zee4)
 - [Lessons learned from becoming CTO of a small startup](https://app.daily.dev/posts/J-LYGn4TQ?utm_source=rss&utm_medium=bookmarks&utm_campaign=I9dDe5CQwr5psfm90zee4)
 - [bradtraversy/50projects50days: 50+ mini web projects using HTML, CSS &amp; JS](https://app.daily.dev/posts/e-SprwxHn?utm_source=rss&utm_medium=bookmarks&utm_campaign=I9dDe5CQwr5psfm90zee4)
