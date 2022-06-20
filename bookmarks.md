@@ -24,6 +24,14 @@
 
 ### [↑](#bookmarks) DailyDev
 <!-- DAILYDEV-BOOKMARKS:START -->
+- [MakerBox - 600 tools with generous free plans for indie entrepreneurs](https://app.daily.dev/posts/oBUL-ZYxz?utm_source=rss&utm_medium=bookmarks&utm_campaign=I9dDe5CQwr5psfm90zee4)
+- [Secli - A CLI to store secrets locally](https://app.daily.dev/posts/kX_i90GMl?utm_source=rss&utm_medium=bookmarks&utm_campaign=I9dDe5CQwr5psfm90zee4)
+- [I Coded The Same Algorithm in Python and Rust. Here Are the Performance Differences](https://app.daily.dev/posts/D9hSgX-94?utm_source=rss&utm_medium=bookmarks&utm_campaign=I9dDe5CQwr5psfm90zee4)
+- [Essential Illustrations - Creative library of 1,200 consistent illustrations ✨](https://app.daily.dev/posts/HaZvs6NF8?utm_source=rss&utm_medium=bookmarks&utm_campaign=I9dDe5CQwr5psfm90zee4)
+- [Verse™ Beta - The first general purpose codeless development platform](https://app.daily.dev/posts/814L0azRt?utm_source=rss&utm_medium=bookmarks&utm_campaign=I9dDe5CQwr5psfm90zee4)
+- [Carbide - Stop diagramming and start modelling](https://app.daily.dev/posts/duIASbz-3?utm_source=rss&utm_medium=bookmarks&utm_campaign=I9dDe5CQwr5psfm90zee4)
+- [Musk buys Twitter](https://app.daily.dev/posts/4I6he16-R?utm_source=rss&utm_medium=bookmarks&utm_campaign=I9dDe5CQwr5psfm90zee4)
+- [4 Automation Projects in Python You Can Finish in a Weekend](https://app.daily.dev/posts/NLeOa3QoV?utm_source=rss&utm_medium=bookmarks&utm_campaign=I9dDe5CQwr5psfm90zee4)
 - [From Figma to Next.js App in Minutes](https://app.daily.dev/posts/XE4DQtt6C?utm_source=rss&utm_medium=bookmarks&utm_campaign=I9dDe5CQwr5psfm90zee4)
 - [ArgoCD Best Practices You Should Know](https://app.daily.dev/posts/2LuV9G3DE?utm_source=rss&utm_medium=bookmarks&utm_campaign=I9dDe5CQwr5psfm90zee4)
 - [Microservices Architecture | Ultimate Guide &amp; Tutorial](https://app.daily.dev/posts/XGQELR20f?utm_source=rss&utm_medium=bookmarks&utm_campaign=I9dDe5CQwr5psfm90zee4)
