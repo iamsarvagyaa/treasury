@@ -1,10 +1,10 @@
 name: RssFeed
 
 on:
-  workflow_run:
-    workflows: ["DailyDev"]
-    types:
-      - completed
+  # workflow_run:
+  #   workflows: ["DailyDev"]
+  #   types:
+  #     - completed
   repository_dispatch:
     types: [rssfeed]
   workflow_dispatch:
@@ -23,8 +23,8 @@ jobs:
         uses: gautamkrishnar/blog-post-workflow@master
         with:
           comment_tag_name: "RSS"
-          feed_list: "https://blog.cloudflare.com/rss/,https://serverlessfirst.com/feed.xml,https://serverlessland.com/feed.xml"
-          feed_names: "🔐 Cloudflare,🚀 ServerlessFirst,🚀 ServerlessLand,"
+          feed_list: "https://serverlessfirst.com/feed.xml,https://serverlessland.com/feed.xml"
+          feed_names: "🚀 ServerlessFirst,🚀 ServerlessLand,"
           template: "$newline - $feedName : [$title]($url)"
           title_max_length: "75"
           max_post_count: 10000

@@ -19,7 +19,7 @@ jobs:
         uses: gautamkrishnar/blog-post-workflow@master
         with:
           comment_tag_name: "DAILYDEV-BOOKMARKS"
-          feed_list: "https://api.daily.dev/rss/b/1c145acc-b14f-4f40-b08f-976534d3bf82"
+          feed_list: "https://api.daily.dev/rss/b/6b464680-0711-4916-a21b-5a2faa2d5fe5"
           max_post_count: 50
           readme_path: "./bookmarks.md"
           gh_token: ${{ secrets.GH_KBASE }}
