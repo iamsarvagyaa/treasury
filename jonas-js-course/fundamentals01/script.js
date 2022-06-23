@@ -2,7 +2,6 @@
  * Values and Variables *
  ************************/
 
-
 /*
 
 console.log('Ronny'); // here: `Ronny` is a value which is string
@@ -31,11 +30,9 @@ console.log(my_first_job);
 
 */
 
-
 /**************
  * Data Types *
  **************/
-
 
 /*
 
@@ -60,4 +57,22 @@ console.log(currentYear); // now: it will shows the defined value which is `2021
 
 */
 
+/***********************
+ * let, const, and var *
+ ***********************/
 
+/*
+let age = 23; // let is used to define the variable
+age = 24; // we can reassign a variable with values but without using let
+console.log(age);
+
+const birthYear = 1998; // `const` is used for constants
+/// birthYear = 1999; // constants can't be reassigned
+console.log(birthYear);
+
+var programmer = true; // var is used to define a variable but this is an old way to define.
+console.log(programmer);
+
+lastName = "Sagar"; // this will accepts without declaring with var, let, and const
+console.log(lastName); // but this is not a variable, it's a properties.
+*/
