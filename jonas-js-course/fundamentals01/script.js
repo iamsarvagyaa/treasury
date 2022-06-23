@@ -76,3 +76,47 @@ console.log(programmer);
 lastName = "Sagar"; // this will accepts without declaring with var, let, and const
 console.log(lastName); // but this is not a variable, it's a properties.
 */
+
+/*******************
+ * Basic Operators *
+ ******************/
+
+/*
+const ageSarvagya = 2022 - 1999;
+const ageSamyak = 2022 - 2000;
+/// console.log(ageSamyak);
+/// console.log(ageSarvagya);
+console.log(ageSarvagya, ageSamyak);
+
+// Math Operators
+const currentYear = 2022;
+const harisAge = currentYear - 1991; // we can also use operators w/variables
+const harryAge = currentYear - 1986;
+console.log(harisAge, harryAge);
+console.log(harisAge * 2, harryAge / 2, 2 ** 5); // `2 ** 5` mean 2 to the power 5
+
+let firstName = "Sarvagya";
+let lastName = "Sagar";
+console.log(firstName + " " + lastName); // we can also use concatenations
+
+// Assignment Operators
+let x = 10 + 5; // here is two operators `=`, `+`
+x += 10; // `+=` that mean x = x + 10
+x *= 2; // `*=` that means x = x * 2
+x++; // `++` means increment by 1, x = x + 1
+x--; // `--` means decrement by 1, x = x -1
+console.log(x);
+
+// Comparison Operators
+console.log(harisAge > harryAge); // `>` this is a greater than operator always reply in true/false
+
+// comparison operators: >, <, >=, <=
+
+console.log(harryAge >= 21); // `>=` this means greater than or equal to
+console.log(harisAge <= 28); // `<=` this means less than or equal to
+
+let compAge = harryAge <= harisAge;
+console.log(compAge); // we can also store comparison operators in variable
+
+console.log(currentYear - 1991 > currentYear - 1986); // we can also use multi operators
+*/
