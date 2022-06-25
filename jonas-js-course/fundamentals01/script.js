@@ -125,7 +125,7 @@ console.log(currentYear - 1991 > currentYear - 1986); // we can also use multi o
  * Operator Precedence *
  ***********************/
 
-/// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
 
 /*
 console.log(21 - 2 >= 20 - 1); // it will give output true, and then calculate via precedence table
@@ -141,4 +141,28 @@ let ageJolly = now - 1999;
 // const averageAge = ageJolly + ageJolly / 2; // here the precedence of divide is higher than add, so it will do first divide then addition which is not a right way to calculate average of two.
 const averageAge = (ageJolly + ageKatty) / 2; // here is the bracket who have highest precedence.
 console.log(ageJolly, ageKatty, averageAge);
+*/
+
+/*******************************
+ * Strings & Template Literals *
+ *******************************/
+
+/*
+const firstName = "Sarvagya";
+const job = "DevSecOps Engineer";
+const birthYear = 1999;
+const now = 2022;
+
+const sarvagya = "I'm " + firstName + ", a " + (now - birthYear) + " years old " + job + "!";
+console.log(sarvagya);
+
+// to call the template use `...` backticks, this feature is comes in ES6.
+
+const sarvagyaNew = `I'm ${firstName}, a ${now - birthYear} years old ${job}!`; // here we used string literals
+console.log(sarvagyaNew);
+console.log(`hey, just testing template literals`); // you can also insert directly.
+
+console.log(`this is a multi line string.
+yes now we are in 2nd line,
+now we are in 3rd line.`); // to create multiline string, just insert new line.
 */
