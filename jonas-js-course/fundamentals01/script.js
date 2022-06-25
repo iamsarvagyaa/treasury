@@ -166,3 +166,32 @@ console.log(`this is a multi line string.
 yes now we are in 2nd line,
 now we are in 3rd line.`); // to create multiline string, just insert new line.
 */
+
+/****************************************
+ * Taking Decisions: IF/ELSE Statements *
+ ****************************************/
+
+/*
+const age = 12;
+const isOldEnough = age >= 18;
+
+if (isOldEnough) {
+  // if statement
+  console.log("Sarvagya can start driving 🏎");
+} else {
+  // else statement
+  const yearLeft = 18 - age;
+  console.log(`Sarvagya is too young. Wait ${yearLeft} :)`);
+}
+
+const birthYear = 1999;
+let century;
+
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+
+console.log(century);
+*/
