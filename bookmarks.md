@@ -24,6 +24,14 @@
 
 ### [↑](#bookmarks) DailyDev
 <!-- DAILYDEV-BOOKMARKS:START -->
+- [bradtraversy/50projects50days: 50+ mini web projects using HTML, CSS &amp; JS](https://app.daily.dev/posts/e-SprwxHn?utm_source=rss&utm_medium=bookmarks&utm_campaign=TCmepEr1sZPe6GnzzR0kh)
+- [How To Solve Coding Problems Like A Pro](https://app.daily.dev/posts/Vvmin4O8P?utm_source=rss&utm_medium=bookmarks&utm_campaign=TCmepEr1sZPe6GnzzR0kh)
+- [Mintlify - Automating documentation](https://app.daily.dev/posts/QccZOzkMB?utm_source=rss&utm_medium=bookmarks&utm_campaign=TCmepEr1sZPe6GnzzR0kh)
+- [Creating a Particles Galaxy with Three.js](https://app.daily.dev/posts/CIccaSQbL?utm_source=rss&utm_medium=bookmarks&utm_campaign=TCmepEr1sZPe6GnzzR0kh)
+- [Scaling container technologies at Coinbase with Kubernetes](https://app.daily.dev/posts/FbIflrEZP?utm_source=rss&utm_medium=bookmarks&utm_campaign=TCmepEr1sZPe6GnzzR0kh)
+- [13 Projects You Can Do to Become a Web3 and Blockchain Master - Beginner to Expert](https://app.daily.dev/posts/A80cq4Hk_?utm_source=rss&utm_medium=bookmarks&utm_campaign=TCmepEr1sZPe6GnzzR0kh)
+- [How Do You Overcome Imposter Syndrome?](https://app.daily.dev/posts/_LQNS-BAP?utm_source=rss&utm_medium=bookmarks&utm_campaign=TCmepEr1sZPe6GnzzR0kh)
+- [Top +30 Web/App Design Inspiration sites for your next project](https://app.daily.dev/posts/LC-09UyRc?utm_source=rss&utm_medium=bookmarks&utm_campaign=TCmepEr1sZPe6GnzzR0kh)
 - [How to Improve Coding skills by doing 100 Days Of Code? Here are the 16 benefits that I got from it.](https://app.daily.dev/posts/30voLlobL?utm_source=rss&utm_medium=bookmarks&utm_campaign=TCmepEr1sZPe6GnzzR0kh)
 - [Truegit - A publishing platform powered by Git](https://app.daily.dev/posts/wEwT86dhb?utm_source=rss&utm_medium=bookmarks&utm_campaign=TCmepEr1sZPe6GnzzR0kh)
 - [7 Vim Editors for Better Productivity in 2022](https://app.daily.dev/posts/xGNuN7rIR?utm_source=rss&utm_medium=bookmarks&utm_campaign=TCmepEr1sZPe6GnzzR0kh)
@@ -36,12 +44,4 @@
 - [Build a Twitter Clone w](https://app.daily.dev/posts/a_iO3vZ6o?utm_source=rss&utm_medium=bookmarks&utm_campaign=TCmepEr1sZPe6GnzzR0kh)
 - [MakerBox - 600 tools with generous free plans for indie entrepreneurs](https://app.daily.dev/posts/oBUL-ZYxz?utm_source=rss&utm_medium=bookmarks&utm_campaign=TCmepEr1sZPe6GnzzR0kh)
 - [Introducing CodeGuard: The open-source tool to obfuscate your JavaScript or Python code](https://app.daily.dev/posts/E_jyUZsFA?utm_source=rss&utm_medium=bookmarks&utm_campaign=TCmepEr1sZPe6GnzzR0kh)
-- [System Design Interview Books: Volume 1 vs Volume 2](https://app.daily.dev/posts/ZE2UmCMiF?utm_source=rss&utm_medium=bookmarks&utm_campaign=TCmepEr1sZPe6GnzzR0kh)
-- [Lessons learned from becoming CTO of a small startup](https://app.daily.dev/posts/J-LYGn4TQ?utm_source=rss&utm_medium=bookmarks&utm_campaign=TCmepEr1sZPe6GnzzR0kh)
-- [SimpleDB - Let you store data without touching the database](https://app.daily.dev/posts/4WRPJvV51?utm_source=rss&utm_medium=bookmarks&utm_campaign=TCmepEr1sZPe6GnzzR0kh)
-- [The Complete Modern React Developer 2022](https://app.daily.dev/posts/sF0BDViNQ?utm_source=rss&utm_medium=bookmarks&utm_campaign=TCmepEr1sZPe6GnzzR0kh)
-- [Monorepos in JavaScript &amp; TypeScript](https://app.daily.dev/posts/NLwgv-Lpe?utm_source=rss&utm_medium=bookmarks&utm_campaign=TCmepEr1sZPe6GnzzR0kh)
-- [From Figma to Next.js App in Minutes](https://app.daily.dev/posts/XE4DQtt6C?utm_source=rss&utm_medium=bookmarks&utm_campaign=TCmepEr1sZPe6GnzzR0kh)
-- [I built a Tinybird syntax highlighter for VSCode](https://app.daily.dev/posts/O28Aabthv?utm_source=rss&utm_medium=bookmarks&utm_campaign=TCmepEr1sZPe6GnzzR0kh)
-- [Micro-Frontend—Why and How?](https://app.daily.dev/posts/GO9UeweuM?utm_source=rss&utm_medium=bookmarks&utm_campaign=TCmepEr1sZPe6GnzzR0kh)
 <!-- DAILYDEV-BOOKMARKS:END -->
