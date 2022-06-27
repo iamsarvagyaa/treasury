@@ -120,3 +120,78 @@ console.log(compAge); // we can also store comparison operators in variable
 
 console.log(currentYear - 1991 > currentYear - 1986); // we can also use multi operators
 */
+
+/***********************
+ * Operator Precedence *
+ ***********************/
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
+/*
+console.log(21 - 2 >= 20 - 1); // it will give output true, and then calculate via precedence table
+console.log(25 - 10 - 5); // left to right
+
+let x, y; // we took empty variables
+x = y = 25 - 15 - 5; // right to left
+console.log(x, y); // observe the output
+
+let now = 2022;
+let ageKatty = now - 1990;
+let ageJolly = now - 1999;
+// const averageAge = ageJolly + ageJolly / 2; // here the precedence of divide is higher than add, so it will do first divide then addition which is not a right way to calculate average of two.
+const averageAge = (ageJolly + ageKatty) / 2; // here is the bracket who have highest precedence.
+console.log(ageJolly, ageKatty, averageAge);
+*/
+
+/*******************************
+ * Strings & Template Literals *
+ *******************************/
+
+/*
+const firstName = "Sarvagya";
+const job = "DevSecOps Engineer";
+const birthYear = 1999;
+const now = 2022;
+
+const sarvagya = "I'm " + firstName + ", a " + (now - birthYear) + " years old " + job + "!";
+console.log(sarvagya);
+
+// to call the template use `...` backticks, this feature is comes in ES6.
+
+const sarvagyaNew = `I'm ${firstName}, a ${now - birthYear} years old ${job}!`; // here we used string literals
+console.log(sarvagyaNew);
+console.log(`hey, just testing template literals`); // you can also insert directly.
+
+console.log(`this is a multi line string.
+yes now we are in 2nd line,
+now we are in 3rd line.`); // to create multiline string, just insert new line.
+*/
+
+/****************************************
+ * Taking Decisions: IF/ELSE Statements *
+ ****************************************/
+
+/*
+const age = 12;
+const isOldEnough = age >= 18;
+
+if (isOldEnough) {
+  // if statement
+  console.log("Sarvagya can start driving 🏎");
+} else {
+  // else statement
+  const yearLeft = 18 - age;
+  console.log(`Sarvagya is too young. Wait ${yearLeft} :)`);
+}
+
+const birthYear = 1999;
+let century;
+
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+
+console.log(century);
+*/
