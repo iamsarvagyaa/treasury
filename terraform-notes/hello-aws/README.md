@@ -66,3 +66,7 @@ resource "aws_instance" "testing" {
 > So, yes this is our simple terraform script to provision the single EC2 instance in AWS.
 
 Now, there are few command line instructions to start deployment of infrastructure via terraform.
+
+- `terraform init` :
+- `terraform plan` :
+- `terraform apply` :
