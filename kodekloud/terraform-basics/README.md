@@ -63,12 +63,115 @@ So, **resource** is a block name, **local_file** is a block type and **helloworl
 Terraform provisioning consists of four steps:
 
 - create and write the terraform configuration file.
-  ![helloworld.tf](../../static/terraform/helloworld_tf.png)
+
+  ```hcl
+  resource "local_file" "helloworld" {
+    filename = "/root/helloworld.txt"
+    content = "Hello World!"
+  }
+  ```
+
 - run `terraform init` command to initiate the terraform project.
-  ![helloworld_init](../../static/terraform/helloworld_init_tf.png)
+
+  ```shell
+
+    hello-world › terraform init
+
+  Initializing the backend...
+
+  Initializing provider plugins...
+  - Finding latest version of hashicorp/local...
+  - Installing hashicorp/local v2.2.3...
+  - Installed hashicorp/local v2.2.3 (signed by HashiCorp)
+
+  Terraform has created a lock file .terraform.lock.hcl to record the provider
+  selections it made above. Include this file in your version control repository
+  so that Terraform can guarantee to make the same selections by default when
+  you run "terraform init" in the future.
+
+  Terraform has been successfully initialized!
+
+  You may now begin working with Terraform. Try running "terraform plan" to see
+  any changes that are required for your infrastructure. All Terraform commands
+  should now work.
+
+  If you ever set or change modules or backend configuration for Terraform,
+  rerun this command to reinitialize your working directory. If you forget, other
+  commands will detect it and remind you to do so if necessary.
+
+  ```
+
 - run `terraform plan` command to review the execution plan.
-  ![helloworld_plan](../../static/terraform/helloworld_plan_tf.png)
+
+  ```shell
+
+  hello-world › terraform plan
+
+  Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+    + create
+
+  Terraform will perform the following actions:
+
+    # local_file.helloworld will be created
+    + resource "local_file" "helloworld" {
+        + content              = "Hello World!"
+        + directory_permission = "0777"
+        + file_permission      = "0777"
+        + filename             = "./helloworld.txt"
+        + id                   = (known after apply)
+      }
+
+  Plan: 1 to add, 0 to change, 0 to destroy.
+
+  Note: You didn't use the -out option to save this plan, so Terraform can't guarantee to take exactly these actions if you run "terraform apply" now.
+
+  ```
+
 - at last run `terraform apply` command to apply the provisioning.
-  ![helloworld_apply](../../static/terraform/helloworld_apply_tf.png)
+
+  ```shell
+
+  hello-world › terraform apply
+
+  Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+    + create
+
+  Terraform will perform the following actions:
+
+    # local_file.helloworld will be created
+    + resource "local_file" "helloworld" {
+        + content              = "Hello World!"
+        + directory_permission = "0777"
+        + file_permission      = "0777"
+        + filename             = "./helloworld.txt"
+        + id                   = (known after apply)
+      }
+
+  Plan: 1 to add, 0 to change, 0 to destroy.
+
+  Do you want to perform these actions?
+    Terraform will perform the actions described above.
+    Only 'yes' will be accepted to approve.
+
+    Enter a value: yes
+
+  local_file.helloworld: Creating...
+  local_file.helloworld: Creation complete after 0s [id=2ef7bde608ce5404e97d5f042f95f89f1c232871]
+
+  Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+
+  ```
+
 - We can also run `terraform show` command to view the details of configuration.
-  ![helloworld_show](../../static/terraform/helloworld_show_tf.png)
+
+  ```shell
+  hello-world › terraform show
+  # local_file.helloworld:
+  resource "local_file" "helloworld" {
+      content              = "Hello World!"
+      directory_permission = "0777"
+      file_permission      = "0777"
+      filename             = "./helloworld.txt"
+      id                   = "2ef7bde608ce5404e97d5f042f95f89f1c232871"
+  }
+  ```
