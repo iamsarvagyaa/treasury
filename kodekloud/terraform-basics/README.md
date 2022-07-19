@@ -58,9 +58,17 @@ resource "local_file" "helloworld" {
 
 So, **resource** is a block name, **local_file** is a block type and **helloworld** is resource name. In block type we have local_file, here **local** is provider and **file** is resource. After that, resource block is enclosed with curly brackets. Below, we have arguments as **filename and content** that have individual values.
 
+> Please look at [Hello World](./hello-world/helloworld.tf) example here.
+
 Terraform provisioning consists of four steps:
 
 - create and write the terraform configuration file.
+  ![helloworld.tf](../../static/terraform/helloworld_tf.png)
 - run `terraform init` command to initiate the terraform project.
+  ![helloworld_init](../../static/terraform/helloworld_init_tf.png)
 - run `terraform plan` command to review the execution plan.
+  ![helloworld_plan](../../static/terraform/helloworld_plan_tf.png)
 - at last run `terraform apply` command to apply the provisioning.
+  ![helloworld_apply](../../static/terraform/helloworld_apply_tf.png)
+- We can also run `terraform show` command to view the details of configuration.
+  ![helloworld_show](../../static/terraform/helloworld_show_tf.png)
