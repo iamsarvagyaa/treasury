@@ -7,7 +7,7 @@ git clone https://github.com/hashicorp/terraform.git
 cd clone && go install
 ```
 
-### Introduction
+## Introduction
 
 Types of IaC tools:
 
@@ -34,7 +34,7 @@ Physical Machines, VMWare, AWS, Azure, GCP, BigIP, Cloudflare, DNS, Palo Alto, I
 
 Terraform uses HashiCorp Configuration Language (HCL) declarative language. HCL syntax are way more user friendly and easy to write and understand. I learned this in almost half-an-hour. Respect ++ for HashiCorp :)
 
-### Terraform Basics
+## Terraform Basics
 
 As we previously discuss that terraform uses HashiCorp Configuration Language (HCL) declarative language. We can create a file `helloworld.tf` like this in any text-editor. Make sure the extension is `*.tf`.
 
@@ -46,6 +46,8 @@ So, `Resource` in terraform is like an object that terraform manages. It could b
   key2 = "value2"
 }
 ```
+
+### Hello World
 
 Let's understand as an example **Hello World**. We are creating a file name helloworld.txt with content `Hello World`.
 
@@ -75,7 +77,7 @@ Terraform provisioning consists of four steps:
 
   ```shell
 
-    hello-world › terraform init
+  hello-world › terraform init
 
   Initializing the backend...
 
@@ -175,3 +177,41 @@ Terraform provisioning consists of four steps:
       id                   = "2ef7bde608ce5404e97d5f042f95f89f1c232871"
   }
   ```
+
+- If we update the `main.tf`, we need to rerun the `terraform apply` command to provisioned config.
+- Or, if we want to destroy the created file, we have to run `terraform destroy` command.
+
+### Using Terraform Providers
+
+Let's look providers in more detailed way.
+
+- When we type `terraform init` command, terraform create a directory hierarchy like this:
+
+  ```
+
+  project_dir
+  ├── **.terraform**
+  │   └── providers
+  │       └── registry.terraform.io
+  │           └── hashicorp
+  │               └── local
+  │                   └── 2.2.3
+  │                       └── darwin_arm64
+  │                           └── terraform-provider-local_v2.2.3_x5
+  ├── **.terraform.lock.hcl**
+  └── main.tf
+
+  ```
+
+- In above hierarchy, `terraform init` command created one directory named `.terraform` and a file named `.terraform.lock.hcl`. So, why terraform created these files and directories? : terraform stores providers informations there.
+- By default terraform install latest version of providers.
+
+### Configuration Directory
+
+- We can create many configuration files like `cat.tf`, `local.tf`. When we execute the `terraform init|plan|apply` command, terraform provision all config files at once.
+- We can also create a single configuration file with many providers or resources.
+- But, suggested naming conventions are:
+  - **main.tf** : main configuration file contains providers and all resources.
+  - **variables.tf** : contains variable declarations
+  - **outputs.tf** : contains outputs from resources
+  - **provider.tf** : contains provider definitions
