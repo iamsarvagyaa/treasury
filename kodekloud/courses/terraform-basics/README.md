@@ -7,6 +7,16 @@ git clone https://github.com/hashicorp/terraform.git
 cd clone && go install
 ```
 
+Contents:
+
+- [Terraform Basics Training Course](#terraform-basics-training-course)
+  - [Introduction](#introduction)
+  - [Terraform Basics](#terraform-basics)
+    - [Hello World](#hello-world)
+    - [Using Terraform Providers](#using-terraform-providers)
+    - [Configuration Directory](#configuration-directory)
+    - [Multiple Providers](#multiple-providers)
+
 ## Introduction
 
 Types of IaC tools:
@@ -211,7 +221,24 @@ Let's look providers in more detailed way.
 - We can create many configuration files like `cat.tf`, `local.tf`. When we execute the `terraform init|plan|apply` command, terraform provision all config files at once.
 - We can also create a single configuration file with many providers or resources.
 - But, suggested naming conventions are:
+
   - **main.tf** : main configuration file contains providers and all resources.
   - **variables.tf** : contains variable declarations
   - **outputs.tf** : contains outputs from resources
   - **provider.tf** : contains provider definitions
+  - You know what, we can also install specific version of providers. Have a look:
+
+  ```hcl
+
+  terraform {
+    required_providers {
+      linode = {
+        source = "linode/linode"
+        version = "1.13.3"
+      }
+    }
+  }
+
+  ```
+
+### Multiple Providers
